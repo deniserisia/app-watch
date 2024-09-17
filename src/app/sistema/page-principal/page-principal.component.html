@@ -1,0 +1,9 @@
+<mat-card *ngIf="testResults">
+    <mat-card-title>Test Results</mat-card-title>
+    <mat-list>
+      <mat-list-item *ngFor="let test of testResults.tests">
+        {{ test.name }} - <strong>{{ test.status }}</strong>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+  
