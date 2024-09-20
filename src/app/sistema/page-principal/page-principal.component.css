@@ -1,0 +1,71 @@
+/* Estilização geral das sections */
+.section {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  /* Background alternado entre sections */
+  .section-bg1 {
+    background-color: #f7f7f7;
+  }
+  
+  .section-bg2 {
+    background-color: #eaeaea;
+  }
+  
+  .section-bg3 {
+    background-color: #f0f0f0;
+  }
+  
+  /* Layout dos gráficos */
+  .charts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .chart-wrapper {
+    width: 35%; /* Reduzindo tamanho */
+    margin-bottom: 40px;
+  }
+  
+  .styled-chart {
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    padding: 20px;
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: 250px; /* Reduzindo altura */
+  }
+  
+  /* Estilo para gráficos donuts */
+  .donuts-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .donut-wrapper {
+    width: 20%; /* Diminuindo tamanho dos donuts */
+    margin-bottom: 40px;
+  }
+  
+  .donut-wrapper canvas {
+    height: 200px; /* Diminuindo altura dos donuts */
+    width: 200px; /* Diminuindo largura dos donuts */
+  }
+  

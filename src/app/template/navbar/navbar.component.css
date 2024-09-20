@@ -1,86 +1,76 @@
-
+/* Estilo geral do header */
 header {
     background-color: var(--sec--color);
-    position: relative;
     height: 80px;
     font-family: 'Poppins', sans-serif;
-  }
-  .span{
-    margin: 10px auto;
-    color: var(--pri--color);
-    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
   
-  .green-text{
-    color: var(--primary, #01E0C1);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 28.8px */
-    padding: 8px;
+  /* Estilo da logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
   }
-    
+  
+  .logo-image {
+    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    display: block;
+  }
+  
+  /* Estilo da navbar */
   nav {
-    font-family: 'Poppins', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px;
-      max-width: 1200px;
-      margin: 0 auto;
-      position: absolute; /* Altere para absolute para que o nav fique posicionado dentro do header */
-      top: 0; /* Posicione o nav no topo do header */
-      left: 0; /* Posicione o nav no canto esquerdo do header */
-      right: 0; /* Posicione o nav no canto direito do header */
-      z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
   }
-    
-    .logo-container {
-      display: flex;
-      align-items: center;
-    }
-    
-    .logo img {
-      width: 150px;
-      height: auto;
-    }
-    
-    .menu {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .menu li {
-      margin: 0 10px;
-    }
-    
-    .menu li a {
-      color: #ECEDDB;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 3px;
-      text-transform: uppercase;
-      font-size: 15px;
-    }
-    
-    .menu li a.active,
-    .menu li a:hover {
-      border-bottom: 2px solid var(--pri--color); 
-      transition: .5s;
-    }
-    
-    .checkbtn {
-      color: #ECEDDB;
-      cursor: pointer;
-      display: none;
-    }
-    
-    #check {
-      display: none;
-    }
   
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu li a {
+    color: #ECEDDB;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  .menu li a.active,
+  .menu li a:hover {
+    border-bottom: 2px solid var(--pri--color); 
+    transition: .5s;
+  }
+  
+  /* Estilo do botão para o menu responsivo */
+  .checkbtn {
+    color: #ECEDDB;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /* Menu aberto no modo mobile */
   .menu.open {
     display: flex;
     position: fixed;
@@ -97,49 +87,39 @@ header {
     display: none;
   }
   
+  /* Estilos para dispositivos móveis */
   @media (max-width: 858px) {
-      .logo img {
-        width: 100px;
-        margin-right: 15px;
-      }
-    
-      .menu {
-        position: fixed;
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 80px;
-        right: 0;
-        width: 100%;
-        background: #000;
-        padding: 20px;
-        z-index: 2; /* Define um z-index maior para que o <nav> fique em cima da imagem */
-      }
-      
-      .fa-bars::before {
-        content: "\f0c9";
-        font-size: 25px;
-        margin-left: 15px;
-      }
-      .menu li {
-        margin: 10px 0;
-      }
-    
-      .checkbtn {
-        display: block;
-        margin-right: 30px;
-      }
-    
-      #check:checked ~ .menu {
-        display: flex;
-        position: absolute;
-        text-align: center;
-        font-size: 25px;
-      }
-      
+  
+    /* Ajuste do tamanho da logo */
+    .logo-image {
+      width: 80px;
     }
   
-  @media (max-width: 858px) {
+    /* Menu em dispositivos móveis */
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #000;
+      position: fixed;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+      z-index: 2;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .checkbtn {
+      display: block;
+    }
+  
+    #check:checked ~ .menu {
+      display: flex;
+    }
   
     /* Esconder o ícone de barras quando o menu estiver aberto */
     #check:checked ~ .checkbtn {
@@ -149,9 +129,8 @@ header {
     /* Exibir o ícone de X quando o menu estiver aberto */
     #check:checked ~ .checkbtn-close {
       display: block;
-      margin-right: 30px;
       color: #ECEDDB;
       font-size: 25px;
-      margin-left: 20px;
     }
   }
+  
