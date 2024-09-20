@@ -1,1 +1,144 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --text-color: #fff;
+  --sec--color: #ff4f0d;
+  --pri--color: #080808;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  /* Largura da barra de rolagem */
+  height: 30px;
+  /* Altura da barra de rolagem */
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  /* Cor do fundo da barra de rolagem */
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pri--color);
+  /* Cor do controle da barra de rolagem */
+  border-radius: 100vw;
+}
+
+span {
+  margin: 10px auto;
+}
+
+
+.social-icons {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.social-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.iconTop {
+  display: flex;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: var(--pri--color);
+
+}
+
+.logo-image {
+    max-width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.iconTop a {
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  font-size: 2.4rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  padding: .8rem;
+  background: var(--pri--color);
+  border-radius: .8rem;
+}
+
+.iconTop a i {
+  font-size: 2.4rem;
+  color: var(--sec--color);
+}
+
+.iconTop a:hover {
+  transform: scale(1.2);
+  background: #279EFF;
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background-color: var(--sec--color);
+}
+
+.sub-footer a {
+  text-decoration: none;
+}
+
+.sub-footer-text p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: var(--pri--color);
+  border-radius: .8rem;
+  transition: .5s ease;
+  text-decoration: none;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--text-color);
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--text-color);
+  transition: .5s ease;
+  text-decoration: none;
+}
+
+.footer-iconTop a:hover i {
+  transform: rotate(360deg);
+  text-decoration: none;
+}
