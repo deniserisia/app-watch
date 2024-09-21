@@ -7,5 +7,20 @@
   }
   span {
     margin: 10px auto;
-    color: var(--pri--color); 
+    color: #0d0d0e;
+   
   }
+
+    /* Estilo da logo */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+      }
+      
+      .logo-image {
+        width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+        height: auto;
+        display: block;
+      }

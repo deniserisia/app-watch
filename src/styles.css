@@ -25,24 +25,20 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
-  /* Largura da barra de rolagem */
-  height: 30px;
-  /* Altura da barra de rolagem */
-
+    width: 10px; /* Largura da barra de rolagem */
+    height: 10px; /* Altura da barra de rolagem */
 }
-
+  
 ::-webkit-scrollbar-track {
-  background-color: #fff;
-  /* Cor do fundo da barra de rolagem */
-  border-radius: 100vw;
+    background-color: #fff; /* Cor do fundo da barra de rolagem */
+    border-radius: 100vw;
 }
-
+  
 ::-webkit-scrollbar-thumb {
-  background-color: var(--pri--color);
-  /* Cor do controle da barra de rolagem */
-  border-radius: 100vw;
+    background-color: #007BFF; /* Cor do controle da barra de rolagem */
+    border-radius: 100vw;
 }
+  
 
 span {
   margin: 10px auto;
