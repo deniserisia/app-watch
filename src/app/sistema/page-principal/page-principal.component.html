@@ -1,10 +1,10 @@
-<div class="section-principal">
+<div id="inicio" class="section-principal">
   <div class="content">
     <div class="text-content">
       <h2>Bem-vindo ao <span class="blue-text">Monitoramento</span></h2>
       <p>Monitorar o desempenho dos testes é fundamental para entender a eficácia dos processos dentro de uma empresa.
          Esse monitoramento permite otimizar a qualidade dos serviços, reduzir riscos e proporcionar uma experiência mais confiável para os clientes.</p>
-      <button class="btn-conhecer">Conheça a Solução</button>
+         <button class="btn-conhecer" href="#satisfacao">Conheça a Solução</button>
     </div>
     <div class="image-content">
       <img src="assets/imgs/hom.png" alt="Imagem Principal" class="img-principal">
@@ -14,9 +14,10 @@
 
 
 
-<div class="section section-bg1">
+<div id="satisfacao" class="section section-bg1">
   <h1 class="section-title">Satisfação do Cliente Watch</h1>
-  <p class="section-subtitle">Monitoramento do cliente por tipo de plataforma</p>
+  <p class="section-subtitle">Entender a satisfação do cliente em diferentes plataformas, como iOS e Android, é crucial para uma empresa que visa oferecer experiências personalizadas. Através do monitoramento específico para cada plataforma, é possível identificar problemas únicos e propor soluções direcionadas. 
+    Dessa forma, sua empresa pode garantir que os usuários de qualquer dispositivo recebam o melhor serviço possível.</p>
   
   <div class="charts-container">
     <!-- Gráfico iOS -->
@@ -31,46 +32,46 @@
   </div>
 </div>
 
-<div class="section section-bg2">
+<div id="testes" class="section section-bg2">
   <h1 class="section-title"> Colaboradores & Testes</h1>
-  <p class="section-subtitle">Quantidade de testes automáticos por navegador e Colaboradores alocados para o suporte e desenvolvimento dessas plataformas</p>
+  <p class="section-subtitle">A alocação de colaboradores no suporte e desenvolvimento de plataformas, junto ao número de testes automáticos executados, reflete o empenho da equipe em garantir uma navegação fluida e segura. 
+    Analisar os testes por navegador e sistema operacional ajuda a identificar quais áreas exigem mais atenção e recursos, assegurando que os produtos estejam sempre à altura das expectativas dos usuários.</p>
   
   <div class="charts-container">
     <!-- Gráfico de Testes Automáticos por Navegador -->
-    <div class="chart-wrapper-2 styled-chart">
+    <div class="chart-wrapper-2 styled-chart-2">
       <canvas id="browserChart"></canvas>
     </div>
     <!-- Gráfico de Testes para iOS e Android -->
-    <div class="chart-wrapper-2 styled-chart">
+    <div class="chart-wrapper-2 styled-chart-2">
       <canvas id="iosAndroidTestChart"></canvas>
     </div>
   </div>
 </div>
 
-<div class="section section-bg4">
+<div id="roteiro" class="section section-bg4">
   <h1 class="section-title">Roteiro</h1>
-  <p class="section-subtitle"> A distribuição de falhas por categoria, como login, reprodução ou navegação, ajuda a identificar áreas críticas que necessitam de atenção prioritária. </p>
-    <p class="section-subtitle-2"> Além disso, acompanhar o progresso ao longo do tempo, observando a redução ou aumento das falhas a cada versão, é essencial para garantir que melhorias estão sendo implementadas de forma contínua.</p>
+  <p class="section-subtitle"> Identificar falhas por categoria, como login ou navegação, é um passo essencial para focar os esforços de correção onde eles são mais necessários. 
+    Além disso, o acompanhamento contínuo das falhas e melhorias ao longo das versões permite uma visão clara de como os problemas estão sendo resolvidos. 
+    Isso garante que o progresso seja constante, com melhorias perceptíveis a cada atualização. </p>
+    <div class="charts-container">
+      <!-- Gráfico de barras para resultados de testes -->
+      <div class="chart-wrapper styled-chart">
+        <h3 class="chart-title">Testes Bem-Sucedidos vs Falhas</h3>
+        <canvas id="combinedBarChart"></canvas>
+      </div>
   
-  <div class="charts-container">
-    <!-- Gráfico de barras para resultados de testes -->
-    <div class="chart-wrapper styled-chart">
-      <h3 class="chart-title">Testes Bem-Sucedidos vs Falhas</h3>
-      <canvas id="combinedBarChart"></canvas>
-    </div>
-
-    <!-- Gráfico de linha para o progresso ao longo do tempo -->
-    <div class="chart-wrapper styled-chart">
-      <h3 class="chart-title"> Progresso de Falhas e Sucessos ao Longo do Tempo</h3>
-      <canvas id="progressLineChart"></canvas>
-    </div>
-
-    <!-- Gráfico de pizza para a distribuição dos testes falhados -->
-    <div class="chart-wrapper styled-chart">
-      <h3 class="chart-title">Distribuição das Falhas por Categoria</h3>
-      <canvas id="failDistributionChart"></canvas>
-    </div>
-
+      <!-- Gráfico de linha para o progresso ao longo do tempo -->
+      <div class="chart-wrapper styled-chart">
+        <h3 class="chart-title"> Progresso de Falhas e Sucessos ao Longo do Tempo</h3>
+        <canvas id="progressLineChart"></canvas>
+      </div>
+  
+      <!-- Gráfico de pizza para a distribuição dos testes falhados -->
+      <div class="chart-wrapper styled-chart">
+        <h3 class="chart-title">Distribuição das Falhas por Categoria</h3>
+        <canvas id="failDistributionChart"></canvas>
+      </div>
   </div>
 </div>
 

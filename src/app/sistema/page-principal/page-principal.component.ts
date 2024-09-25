@@ -27,7 +27,7 @@ export class PagePrincipalComponent implements OnInit {
       data: {
         labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
         datasets: [{
-          label: 'Apple Store - Usuários IOS',
+          label: 'Comentários: Apple Store - Usuários IOS',
           data: [1, -2, 3, -1, 2, -3, 1, 2, -1, 3, -2, 1],
           backgroundColor: '#4CAF50',
         }]
@@ -47,7 +47,7 @@ export class PagePrincipalComponent implements OnInit {
       data: {
         labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
         datasets: [{
-          label: 'Play Store - Usuários Android',
+          label: 'Comentários: Play Store - Usuários Android',
           data: [2, -3, 1, -2, 3, -1, 2, -3, 1, 2, -1, 3],
           backgroundColor: '#2196F3',
         }]

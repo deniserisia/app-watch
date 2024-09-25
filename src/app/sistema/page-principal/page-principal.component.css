@@ -1,144 +1,145 @@
 /* Estilo da section "Principal" */
 .section-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px; /* Aumentando o tamanho da section */
-    background-color: #f4f4f4; /* Cor de fundo */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px; /* Aumentando o tamanho da section */
+  background-color: #f4f4f4; /* Cor de fundo */
+}
 
-  .blue-text {
-    color: #007BFF; /* Cor azul */
-  }
-  
-  
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1400px; /* Aumentando o espaço disponível */
-    width: 100%;
-  }
-  
-  /* Estilo para o conteúdo de texto */
-  .text-content {
-    flex: 1;
-    padding-right: 40px; /* Aumentando o espaçamento entre texto e imagem */
-  }
-  
-  .text-content h2 {
-    font-size: 3.5rem; /* Aumentando o tamanho do título */
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .text-content p {
-    font-size: 1.5rem; /* Aumentando o tamanho do texto */
-    color: #666;
-    margin-bottom: 40px;
-  }
-  
-  .btn-conhecer {
-    padding: 10px 12px;
-    background-color: #FF6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.4rem;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-conhecer:hover {
-    background-color: #45a049;
-  }
-  
-  /* Estilo para o conteúdo da imagem */
-  .image-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .img-principal {
-    max-width: 110%; /* Aumentando o tamanho da imagem */
-    height: auto;
-    border-radius: 15px; /* Borda arredondada */
-  }
-  
-  
+.blue-text {
+  color: #007BFF; /* Cor azul */
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px; /* Aumentando o espaço disponível */
+  width: 100%;
+}
+
+/* Estilo para o conteúdo de texto */
+.text-content {
+  flex: 1;
+  padding-right: 40px; /* Aumentando o espaçamento entre texto e imagem */
+}
+
+.text-content h2 {
+  font-size: 3.5rem; /* Aumentando o tamanho do título */
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.text-content p {
+  font-size: 1.5rem; /* Aumentando o tamanho do texto */
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.btn-conhecer {
+  padding: 10px 12px;
+  background-color: #FF6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.3s;
+}
+
+.btn-conhecer:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para o conteúdo da imagem */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img-principal {
+  max-width: 110%; /* Aumentando o tamanho da imagem */
+  height: auto;
+  border-radius: 15px; /* Borda arredondada */
+}
+
+
 
 .section {
-    text-align: center;
-    padding: 50px;
-    background-color: #f4f4f4;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .section-subtitle {
-    font-size: 1.2rem;
-    color: #666;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  
-  .section-subtitle-2 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .charts-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .chart-wrapper {
-   
-    margin-bottom: 20px;
-  }
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
 
-  .chart-wrapper-2 {
-    width: 40%; /* Reduzindo um pouco o tamanho */
-    margin-bottom: 40px;
-  }
+.section-title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 
-  
-  
-  .chart-wrapper-1 {
-    width: 42%; /* Reduzindo um pouco o tamanho */
-    margin-bottom: 40px;
-  }
-  .styled-chart {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  canvas {
-    max-width: 100%;
-    height: 220px; /* Diminuindo altura */
-  }
-  
-  .chart-title {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .section-bg4 {
-    background-color: #D1E9F6;
-  }
+.charts-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.chart-wrapper {
+ 
+  margin-bottom: 20px;
+}
+
+.chart-wrapper-2 {
+  width: 40%; /* Reduzindo um pouco o tamanho */
+  margin-bottom: 40px;
+}
+
+
+
+
+.chart-wrapper-1 {
+  width: 42%; /* Reduzindo um pouco o tamanho */
+  margin-bottom: 40px;
+}
+.styled-chart {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.styled-chart-2 {
+  background-color: #dedede;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  max-width: 100%;
+  height: 220px; /* Diminuindo altura */
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.section-bg4 {
+  background-color: #D1E9F6;
+}
 
 .section-bg1{
-    background-color: #D1E9F6;
+  background-color: #D1E9F6;
 }
-  

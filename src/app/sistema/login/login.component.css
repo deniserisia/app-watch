@@ -1,0 +1,133 @@
+/* Esconde a navbar e o footer na página de login */
+.login-page .navbar,
+.login-page .footer {
+    display: none;
+}
+
+.section-main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, rgb(3, 3, 3), #ff4f0d);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal do formulário de login */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 60px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Estilo para a logo centralizada */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Estilo do cabeçalho de login */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Estilo dos rótulos */
+.input-label {
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos inputs do formulário */
+.login-input {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo do link Esqueceu sua senha */
+.forgot-password {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.forgot-password .forgot-link {
+    color: #007bff; /* Cor azul */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer;
+}
+
+/* Ajuste para a disposição dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button,
+.back-button {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 48%; /* Define a largura dos botões */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilo do botão de enviar */
+.login-button {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Efeito de hover nos botões */
+.login-button:hover {
+    background-color: deepskyblue;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Ajusta o layout para dispositivos móveis */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 40px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .login-button,
+    .back-button {
+        width: 100%; /* Botões ocupam 100% da largura em telas pequenas */
+        margin-bottom: 10px; /* Espaço entre os botões */
+    }
+}

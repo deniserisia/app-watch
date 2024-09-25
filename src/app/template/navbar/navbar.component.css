@@ -48,9 +48,8 @@ header {
     color: #ECEDDB;
     text-decoration: none;
     padding: 10px;
-    border-radius: 3px;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .menu li a.active,
@@ -133,4 +132,18 @@ header {
       font-size: 25px;
     }
   }
-  
+
+.btn-acesso {
+  background-color: #007BFF; /* Fundo azul */
+  color: #fff; /* Texto branco */
+  padding: 10px 15px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-acesso:hover {
+  background-color: #0056b3; /* Fundo azul mais escuro no hover */
+  transition: background-color 0.3s ease;
+}
