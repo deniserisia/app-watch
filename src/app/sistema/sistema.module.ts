@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { SistemaRoutingModule } from './sistema-routing.module';
 import { PagePrincipalComponent } from './page-principal/page-principal.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
-    PagePrincipalComponent
+    PagePrincipalComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,

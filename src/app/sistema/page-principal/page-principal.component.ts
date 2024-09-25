@@ -15,11 +15,11 @@ export class PagePrincipalComponent implements OnInit {
   ngOnInit(): void {
     this.resultsService.getTestResults().subscribe((data) => {
       this.testResults = data;
+      setTimeout(() => this.createCharts(), 0); // Cria os gráficos após renderizar o HTML
     });
-
-    this.createCharts();
   }
-
+  
+ 
   createCharts() {
     // Gráfico iOS
     new Chart('iosChart', {

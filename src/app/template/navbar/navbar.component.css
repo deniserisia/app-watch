@@ -133,4 +133,21 @@ header {
       font-size: 25px;
     }
   }
+
+/* Estilo específico para o botão "Acesso à Plataforma" */
+.menu .btn-acesso {
+  background-color: #007BFF; /* Fundo azul */
+  color: #fff; /* Texto branco */
+  padding: 10px 15px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-acesso:hover {
+  background-color: #0056b3; /* Fundo azul mais escuro no hover */
+  transition: background-color 0.3s ease;
+}
+
   
