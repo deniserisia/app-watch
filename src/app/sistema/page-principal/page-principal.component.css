@@ -61,9 +61,10 @@
 }
 
 .img-principal {
-  max-width: 110%; /* Aumentando o tamanho da imagem */
+  max-width: 150%; /* Aumentando o tamanho da imagem */
   height: auto;
   border-radius: 15px; /* Borda arredondada */
+  margin-right: 40px;
 }
 
 
