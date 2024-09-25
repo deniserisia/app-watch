@@ -1,7 +1,12 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/poppins/poppins-regular.woff2') format('woff2'),
+       url('/assets/fonts/poppins/poppins-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
   margin: 0;
